@@ -1,0 +1,390 @@
+@font-face {
+    font-family: proxima;
+    src: url('../fonts/proxima-nova.otf');
+}
+
+@font-face {
+    font-family: proxima-light;
+    src: url('../fonts/ProximaNova-Light.otf');
+}
+
+@font-face {
+    font-family: proxima-bold;
+    src: url('../fonts/ProximaNovaSoft-Bold.otf');
+}
+
+
+@font-face {
+    font-family: BlackJar;
+    src: url('../fonts/BLACKJAR.TTF');
+}
+
+body {
+    margin: 0px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 940px;
+    overflow: visible;
+    clear: both;
+}
+
+/*************************
+         Header
+*************************/
+
+#header {
+    background-color: rgb(100, 195, 231);
+    height: 651px;
+}
+
+#logo {
+    background: url('../images/logo.png');
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    box-shadow: 0px 4px 0px 0px rgb(13, 169, 229) , 15px 13px 0px 0px rgb(39, 176, 230);
+}
+
+#nav-logo-enter {
+    background: url('../images/hamburger.png') no-repeat;
+    height: 33px;
+    width: 30px;
+    display: inline-block;
+    float: right;
+    margin-top: 39px;
+}
+
+#header-text-content {
+    float: right;
+    clear: right;
+    margin-top: 85px;
+    color: white;
+}
+
+#header-main-text {
+    float: right;
+    clear: right;
+    font-family: BlackJar;
+    font-size: 70px;
+    margin: 0px;
+    margin-top: 5px;
+
+}
+
+#header-sub-text {
+    float: right;
+    clear: right;
+    font-family: proxima-light;
+    font-size: 35px;
+    margin-top: 5px;
+
+}
+#header-free-text {
+    font-family: proxima-bold;
+    font-style: italic;
+}
+
+#download-button {
+    float: right;
+    clear: right;
+    font-family: proxima;
+    text-decoration: none;
+    color: white;
+    border: solid 2px ;
+    padding: 20.5px 28.5px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    box-shadow: white 0px 0px 0px;
+}
+
+#download-button:hover {
+    color: #64c3e7;
+    background-color: #fff;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: #43778f 5px 5px 8px;
+    transform: scale(1.1);
+}
+
+#header-picture {
+    float: left;
+    display: block;
+    bottom: 46px;
+    position: relative;
+    left: 70px;
+}
+
+/*************************
+     Navigation Bar
+*************************/
+
+nav {
+    position: absolute;
+    background-color: #e57f85;
+    height: 651px;
+    width: 100%;
+    top: 0;
+    transition: all .4s ease-in-out;
+}
+
+.nav-hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-show {
+    opacity: .9;
+    pointer-events: all;
+}
+
+#nav-group {
+    position: relative;
+    text-align: center;
+    top: 135px;
+    clear: both;
+}
+
+#nav-list {
+    margin: 0 auto;
+    list-style: none;
+    width: 180px;
+    padding-left: 0px;
+    overflow: auto;
+}
+.nav-item {
+    margin: 12px 0px;
+    overflow: auto;
+    line-height: 45px;
+    height: 45px;
+}
+
+.nav-item > a > .fa {
+    float: left;
+    background-color: white;
+    border: white 15px solid;
+    border-radius: 100%;
+    position: relative;
+
+    color: #4eacdd;
+}
+
+.nav-item > a {
+    color: white;
+    font-family: proxima-bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#nav-logo-exit {
+    background: url(../images/close.png) no-repeat;
+    height: 33px;
+    width: 25.5px;
+    display: inline-block;
+    float: right;
+    margin-top: 39px;
+}
+
+/*************************
+     About Me Section
+*************************/
+
+#about-me {
+    position: relative;
+    height: 650px;
+    background-color: #f4f4f4;
+    bottom: 150px;
+}
+
+#about-me:after {
+    content: '';
+    clear: both;
+}
+
+#about-me-header {
+    font-family: proxima-light;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: lighter;
+    position: relative;
+}
+
+#about-me-details-1 {
+    font-family: "Proxima Nova Regular";
+    font-size: 16px;
+    margin: 45px 0px 0px 0px;
+    width: 520px;
+    line-height: 23px;
+    color: #7e7e7e;
+}
+
+#about-me-details-2:before {
+    content: '';
+    background-color: #4eacdd;
+    width: 5px;
+    height: 100%;
+    float: left;
+    margin-right: 13px;
+}
+
+#about-me-details-2 {
+    font-family: "Proxima Nova Regular";
+    font-size: 16px;
+    width: 520px;
+    color: #7e7e7e;
+    margin-top: 35px;
+    height: 64px;
+    line-height: 23px;
+}
+
+#about-me-details-2:after {
+    content: '';
+    clear: both;
+}
+
+#about-me-text {
+    position: relative;
+    top: 95px;
+}
+
+#contact-me-email {
+    color: #14af8f;
+    text-decoration:  none;
+    padding: 15px 30px;
+    border: 2px solid #14af8f;
+    float: left;
+    margin-top: 70px;
+    transition: all .1s ease-in-out;
+    border-radius: 2px;
+}
+
+#contact-me-email:hover {
+    color: #f4f4f4;
+    background-color: #14af8f;
+    border: 2px solid #f4f4f4;
+}
+
+#about-me-picture {
+    float: right;
+    clear: both;
+    position: relative;
+    overflow: visible;
+    bottom: 271px;
+    height: 498px;
+}
+
+/*************************
+     Portfolio Section
+*************************/
+
+#portfolio {
+    background: url('../images/portfolio.png') no-repeat;
+    height: 650px;
+    clear: both;
+    position: relative;
+    bottom: 421px;
+}
+
+#portfolio-text {
+
+}
+
+#portfolio-text > h1 {
+    font-family: proxima-light;
+    font-size: 40px;
+    font-weight: lighter;
+
+    margin-top: 100px;
+    margin-right: 92px;
+    float: right;
+}
+
+#portfolio-text > h2 {
+    width: 387px;
+
+    font-size: 16px;
+    font-family: proxima-bold;
+    line-height: 30px;
+
+    float: right;
+    clear: right;
+}
+
+#portfolio-text > h3 {
+    width: 387px;
+
+    font-family: proxima;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    margin-top: 25px;
+    float: right;
+    clear: right;
+}
+
+#portfolio-button {
+    color: #ea4c89;
+    text-decoration:  none;
+    padding: 15px 30px;
+    border: 2px solid #ea4c89;
+    margin-top: 70px;
+    transition: all .1s ease-in-out;
+    border-radius: 2px;
+    float: right;
+    clear: right;
+    margin-right: 151px;
+}
+
+#portfolio-button:hover {
+    color: #f4f4f4;
+    background-color: #ea4c89;
+    border: 2px solid #f4f4f4;
+}
+
+/*************************
+     Donate Section
+*************************/
+
+#donate {
+    background-color: #13c1ac;
+    height: 325px;
+    position: relative;
+    bottom: 443px;
+}
+
+#donate-container {
+    overflow: auto;
+    height: 300px;
+    text-align: center;
+}
+
+#donate-container > h1 {
+    color: #fff;
+    font-family: proxima;
+    font-size: 40px;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#donate-button {
+    color: #f4f4f4;
+    text-decoration:  none;
+    padding: 15px 30px;
+    border: 2px solid #f4f4f4;
+    margin-top: 70px;
+    transition: all .1s ease-in-out;
+    border-radius: 2px;
+}
+
+#donate-button:hover {
+    color: #139783;
+    background-color: #f4f4f4;
+    border: 2px solid #139783;
+}
